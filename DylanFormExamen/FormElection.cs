@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace DylanFormExamen
 {
-    public partial class Form1 : Form
+    public partial class FormElection : Form
     {
-        public Form1()
+        public FormElection()
         {
             InitializeComponent();
+        }
+
+        private void button_créer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -40,10 +40,10 @@ namespace DylanFormExamen
         }
 
         //methode ajouter electeur
-        public static string ajouter_electeur(Electeur p_elect)
-        {
+        //public static string ajouter_electeur(Electeur p_elect)
+        //{
             //p_elect.(listElecteurs);
-        }
+        //}
 
         public static string rechercher_electeurs_ciconscription(string ciconscription)
         {
@@ -53,6 +53,9 @@ namespace DylanFormExamen
             return ciconscription;
         }
 
-        public static
+        //public static verifier_date_election()
+        //{
+
+        //}
     }
 }

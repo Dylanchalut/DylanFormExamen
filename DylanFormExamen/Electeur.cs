@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace DylanFormExamen
 {
-    public class Electeur
+    public class Electeur : Individu
     {
         //Attributs
         private string numero_electeur;
@@ -24,7 +25,9 @@ namespace DylanFormExamen
         public string NumeroElecteur
         {
             get { return numero_electeur; }
-            set { numero_electeur = value; }
+            set {
+                Regex NE = new Regex("^[0-9]{6}$");
+                if (NE.IsMatch(value)) numero_electeur = value; }
         }
 
         public string Circoncription

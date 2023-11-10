@@ -48,15 +48,36 @@
   <ItemGroup>
     <Compile Include="Electeur.cs" />
     <Compile Include="Election.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FormElecteur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormElecteur.Designer.cs">
+      <DependentUpon>FormElecteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestElecteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestElecteur.Designer.cs">
+      <DependentUpon>FormGestElecteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormElection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormElection.Designer.cs">
+      <DependentUpon>FormElection.cs</DependentUpon>
     </Compile>
     <Compile Include="Individu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormElecteur.resx">
+      <DependentUpon>FormElecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormElection.resx">
+      <DependentUpon>FormElection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestElecteur.resx">
+      <DependentUpon>FormGestElecteur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
